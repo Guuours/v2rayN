@@ -33,15 +33,14 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtpass = new System.Windows.Forms.TextBox();
+            this.txtuser = new System.Windows.Forms.TextBox();
             this.chkdefAllowInsecure = new System.Windows.Forms.CheckBox();
-            this.chksniffingEnabled2 = new System.Windows.Forms.CheckBox();
+            this.chkAllowLANConn = new System.Windows.Forms.CheckBox();
             this.chksniffingEnabled = new System.Windows.Forms.CheckBox();
             this.chkmuxEnabled = new System.Windows.Forms.CheckBox();
-            this.chkAllowIn2 = new System.Windows.Forms.CheckBox();
-            this.chkudpEnabled2 = new System.Windows.Forms.CheckBox();
-            this.cmbprotocol2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtlocalPort2 = new System.Windows.Forms.TextBox();
             this.cmbprotocol = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.chkudpEnabled = new System.Windows.Forms.CheckBox();
@@ -69,19 +68,38 @@
             this.txtKcpmtu = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.txttrayMenuServersLimit = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtautoUpdateSubInterval = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.chkEnableSecurityProtocolTls13 = new System.Windows.Forms.CheckBox();
+            this.chkEnableAutoAdjustMainLvColWidth = new System.Windows.Forms.CheckBox();
+            this.btnSetLoopback = new System.Windows.Forms.Button();
             this.txtautoUpdateInterval = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.chkIgnoreGeoUpdateCore = new System.Windows.Forms.CheckBox();
-            this.cmbCoreType = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.chkKeepOlderDedupl = new System.Windows.Forms.CheckBox();
             this.cbFreshrate = new System.Windows.Forms.ComboBox();
             this.lbFreshrate = new System.Windows.Forms.Label();
             this.chkEnableStatistics = new System.Windows.Forms.CheckBox();
-            this.chkAllowLANConn = new System.Windows.Forms.CheckBox();
             this.chkAutoRun = new System.Windows.Forms.CheckBox();
+            this.tabPageCoreType = new System.Windows.Forms.TabPage();
+            this.cmbCoreType6 = new System.Windows.Forms.ComboBox();
+            this.labCoreType6 = new System.Windows.Forms.Label();
+            this.cmbCoreType5 = new System.Windows.Forms.ComboBox();
+            this.labCoreType5 = new System.Windows.Forms.Label();
+            this.cmbCoreType4 = new System.Windows.Forms.ComboBox();
+            this.labCoreType4 = new System.Windows.Forms.Label();
+            this.cmbCoreType3 = new System.Windows.Forms.ComboBox();
+            this.labCoreType3 = new System.Windows.Forms.Label();
+            this.cmbCoreType2 = new System.Windows.Forms.ComboBox();
+            this.labCoreType2 = new System.Windows.Forms.Label();
+            this.cmbCoreType1 = new System.Windows.Forms.ComboBox();
+            this.labCoreType1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cmbSystemProxyAdvancedProtocol = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtsystemProxyExceptions = new System.Windows.Forms.TextBox();
@@ -94,6 +112,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.tabPageCoreType.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -113,6 +132,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPageCoreType);
             this.tabControl1.Controls.Add(this.tabPage3);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
@@ -127,15 +147,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtpass);
+            this.groupBox1.Controls.Add(this.txtuser);
             this.groupBox1.Controls.Add(this.chkdefAllowInsecure);
-            this.groupBox1.Controls.Add(this.chksniffingEnabled2);
+            this.groupBox1.Controls.Add(this.chkAllowLANConn);
             this.groupBox1.Controls.Add(this.chksniffingEnabled);
             this.groupBox1.Controls.Add(this.chkmuxEnabled);
-            this.groupBox1.Controls.Add(this.chkAllowIn2);
-            this.groupBox1.Controls.Add(this.chkudpEnabled2);
-            this.groupBox1.Controls.Add(this.cmbprotocol2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtlocalPort2);
             this.groupBox1.Controls.Add(this.cmbprotocol);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.chkudpEnabled);
@@ -148,17 +167,37 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // txtpass
+            // 
+            resources.ApplyResources(this.txtpass, "txtpass");
+            this.txtpass.Name = "txtpass";
+            // 
+            // txtuser
+            // 
+            resources.ApplyResources(this.txtuser, "txtuser");
+            this.txtuser.Name = "txtuser";
+            // 
             // chkdefAllowInsecure
             // 
             resources.ApplyResources(this.chkdefAllowInsecure, "chkdefAllowInsecure");
             this.chkdefAllowInsecure.Name = "chkdefAllowInsecure";
             this.chkdefAllowInsecure.UseVisualStyleBackColor = true;
             // 
-            // chksniffingEnabled2
+            // chkAllowLANConn
             // 
-            resources.ApplyResources(this.chksniffingEnabled2, "chksniffingEnabled2");
-            this.chksniffingEnabled2.Name = "chksniffingEnabled2";
-            this.chksniffingEnabled2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkAllowLANConn, "chkAllowLANConn");
+            this.chkAllowLANConn.Name = "chkAllowLANConn";
+            this.chkAllowLANConn.UseVisualStyleBackColor = true;
             // 
             // chksniffingEnabled
             // 
@@ -171,39 +210,6 @@
             resources.ApplyResources(this.chkmuxEnabled, "chkmuxEnabled");
             this.chkmuxEnabled.Name = "chkmuxEnabled";
             this.chkmuxEnabled.UseVisualStyleBackColor = true;
-            // 
-            // chkAllowIn2
-            // 
-            resources.ApplyResources(this.chkAllowIn2, "chkAllowIn2");
-            this.chkAllowIn2.Name = "chkAllowIn2";
-            this.chkAllowIn2.UseVisualStyleBackColor = true;
-            this.chkAllowIn2.CheckedChanged += new System.EventHandler(this.chkAllowIn2_CheckedChanged);
-            // 
-            // chkudpEnabled2
-            // 
-            resources.ApplyResources(this.chkudpEnabled2, "chkudpEnabled2");
-            this.chkudpEnabled2.Name = "chkudpEnabled2";
-            this.chkudpEnabled2.UseVisualStyleBackColor = true;
-            // 
-            // cmbprotocol2
-            // 
-            this.cmbprotocol2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbprotocol2.FormattingEnabled = true;
-            this.cmbprotocol2.Items.AddRange(new object[] {
-            resources.GetString("cmbprotocol2.Items"),
-            resources.GetString("cmbprotocol2.Items1")});
-            resources.ApplyResources(this.cmbprotocol2, "cmbprotocol2");
-            this.cmbprotocol2.Name = "cmbprotocol2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // txtlocalPort2
-            // 
-            resources.ApplyResources(this.txtlocalPort2, "txtlocalPort2");
-            this.txtlocalPort2.Name = "txtlocalPort2";
             // 
             // cmbprotocol
             // 
@@ -373,20 +379,63 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.txttrayMenuServersLimit);
+            this.tabPage7.Controls.Add(this.label17);
+            this.tabPage7.Controls.Add(this.txtautoUpdateSubInterval);
+            this.tabPage7.Controls.Add(this.label3);
+            this.tabPage7.Controls.Add(this.chkEnableSecurityProtocolTls13);
+            this.tabPage7.Controls.Add(this.chkEnableAutoAdjustMainLvColWidth);
+            this.tabPage7.Controls.Add(this.btnSetLoopback);
             this.tabPage7.Controls.Add(this.txtautoUpdateInterval);
             this.tabPage7.Controls.Add(this.label15);
             this.tabPage7.Controls.Add(this.chkIgnoreGeoUpdateCore);
-            this.tabPage7.Controls.Add(this.cmbCoreType);
-            this.tabPage7.Controls.Add(this.label4);
             this.tabPage7.Controls.Add(this.chkKeepOlderDedupl);
             this.tabPage7.Controls.Add(this.cbFreshrate);
             this.tabPage7.Controls.Add(this.lbFreshrate);
             this.tabPage7.Controls.Add(this.chkEnableStatistics);
-            this.tabPage7.Controls.Add(this.chkAllowLANConn);
             this.tabPage7.Controls.Add(this.chkAutoRun);
             resources.ApplyResources(this.tabPage7, "tabPage7");
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // txttrayMenuServersLimit
+            // 
+            resources.ApplyResources(this.txttrayMenuServersLimit, "txttrayMenuServersLimit");
+            this.txttrayMenuServersLimit.Name = "txttrayMenuServersLimit";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            // 
+            // txtautoUpdateSubInterval
+            // 
+            resources.ApplyResources(this.txtautoUpdateSubInterval, "txtautoUpdateSubInterval");
+            this.txtautoUpdateSubInterval.Name = "txtautoUpdateSubInterval";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // chkEnableSecurityProtocolTls13
+            // 
+            resources.ApplyResources(this.chkEnableSecurityProtocolTls13, "chkEnableSecurityProtocolTls13");
+            this.chkEnableSecurityProtocolTls13.Name = "chkEnableSecurityProtocolTls13";
+            this.chkEnableSecurityProtocolTls13.UseVisualStyleBackColor = true;
+            // 
+            // chkEnableAutoAdjustMainLvColWidth
+            // 
+            resources.ApplyResources(this.chkEnableAutoAdjustMainLvColWidth, "chkEnableAutoAdjustMainLvColWidth");
+            this.chkEnableAutoAdjustMainLvColWidth.Name = "chkEnableAutoAdjustMainLvColWidth";
+            this.chkEnableAutoAdjustMainLvColWidth.UseVisualStyleBackColor = true;
+            // 
+            // btnSetLoopback
+            // 
+            resources.ApplyResources(this.btnSetLoopback, "btnSetLoopback");
+            this.btnSetLoopback.Name = "btnSetLoopback";
+            this.btnSetLoopback.UseVisualStyleBackColor = true;
+            this.btnSetLoopback.Click += new System.EventHandler(this.btnSetLoopback_Click);
             // 
             // txtautoUpdateInterval
             // 
@@ -403,21 +452,6 @@
             resources.ApplyResources(this.chkIgnoreGeoUpdateCore, "chkIgnoreGeoUpdateCore");
             this.chkIgnoreGeoUpdateCore.Name = "chkIgnoreGeoUpdateCore";
             this.chkIgnoreGeoUpdateCore.UseVisualStyleBackColor = true;
-            // 
-            // cmbCoreType
-            // 
-            this.cmbCoreType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCoreType.FormattingEnabled = true;
-            this.cmbCoreType.Items.AddRange(new object[] {
-            resources.GetString("cmbCoreType.Items"),
-            resources.GetString("cmbCoreType.Items1")});
-            resources.ApplyResources(this.cmbCoreType, "cmbCoreType");
-            this.cmbCoreType.Name = "cmbCoreType";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // chkKeepOlderDedupl
             // 
@@ -443,17 +477,101 @@
             this.chkEnableStatistics.Name = "chkEnableStatistics";
             this.chkEnableStatistics.UseVisualStyleBackColor = true;
             // 
-            // chkAllowLANConn
-            // 
-            resources.ApplyResources(this.chkAllowLANConn, "chkAllowLANConn");
-            this.chkAllowLANConn.Name = "chkAllowLANConn";
-            this.chkAllowLANConn.UseVisualStyleBackColor = true;
-            // 
             // chkAutoRun
             // 
             resources.ApplyResources(this.chkAutoRun, "chkAutoRun");
             this.chkAutoRun.Name = "chkAutoRun";
             this.chkAutoRun.UseVisualStyleBackColor = true;
+            // 
+            // tabPageCoreType
+            // 
+            this.tabPageCoreType.Controls.Add(this.cmbCoreType6);
+            this.tabPageCoreType.Controls.Add(this.labCoreType6);
+            this.tabPageCoreType.Controls.Add(this.cmbCoreType5);
+            this.tabPageCoreType.Controls.Add(this.labCoreType5);
+            this.tabPageCoreType.Controls.Add(this.cmbCoreType4);
+            this.tabPageCoreType.Controls.Add(this.labCoreType4);
+            this.tabPageCoreType.Controls.Add(this.cmbCoreType3);
+            this.tabPageCoreType.Controls.Add(this.labCoreType3);
+            this.tabPageCoreType.Controls.Add(this.cmbCoreType2);
+            this.tabPageCoreType.Controls.Add(this.labCoreType2);
+            this.tabPageCoreType.Controls.Add(this.cmbCoreType1);
+            this.tabPageCoreType.Controls.Add(this.labCoreType1);
+            resources.ApplyResources(this.tabPageCoreType, "tabPageCoreType");
+            this.tabPageCoreType.Name = "tabPageCoreType";
+            this.tabPageCoreType.UseVisualStyleBackColor = true;
+            // 
+            // cmbCoreType6
+            // 
+            this.cmbCoreType6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCoreType6.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbCoreType6, "cmbCoreType6");
+            this.cmbCoreType6.Name = "cmbCoreType6";
+            // 
+            // labCoreType6
+            // 
+            resources.ApplyResources(this.labCoreType6, "labCoreType6");
+            this.labCoreType6.Name = "labCoreType6";
+            // 
+            // cmbCoreType5
+            // 
+            this.cmbCoreType5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCoreType5.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbCoreType5, "cmbCoreType5");
+            this.cmbCoreType5.Name = "cmbCoreType5";
+            // 
+            // labCoreType5
+            // 
+            resources.ApplyResources(this.labCoreType5, "labCoreType5");
+            this.labCoreType5.Name = "labCoreType5";
+            // 
+            // cmbCoreType4
+            // 
+            this.cmbCoreType4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCoreType4.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbCoreType4, "cmbCoreType4");
+            this.cmbCoreType4.Name = "cmbCoreType4";
+            // 
+            // labCoreType4
+            // 
+            resources.ApplyResources(this.labCoreType4, "labCoreType4");
+            this.labCoreType4.Name = "labCoreType4";
+            // 
+            // cmbCoreType3
+            // 
+            this.cmbCoreType3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCoreType3.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbCoreType3, "cmbCoreType3");
+            this.cmbCoreType3.Name = "cmbCoreType3";
+            // 
+            // labCoreType3
+            // 
+            resources.ApplyResources(this.labCoreType3, "labCoreType3");
+            this.labCoreType3.Name = "labCoreType3";
+            // 
+            // cmbCoreType2
+            // 
+            this.cmbCoreType2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCoreType2.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbCoreType2, "cmbCoreType2");
+            this.cmbCoreType2.Name = "cmbCoreType2";
+            // 
+            // labCoreType2
+            // 
+            resources.ApplyResources(this.labCoreType2, "labCoreType2");
+            this.labCoreType2.Name = "labCoreType2";
+            // 
+            // cmbCoreType1
+            // 
+            this.cmbCoreType1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCoreType1.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbCoreType1, "cmbCoreType1");
+            this.cmbCoreType1.Name = "cmbCoreType1";
+            // 
+            // labCoreType1
+            // 
+            resources.ApplyResources(this.labCoreType1, "labCoreType1");
+            this.labCoreType1.Name = "labCoreType1";
             // 
             // tabPage3
             // 
@@ -464,12 +582,25 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.cmbSystemProxyAdvancedProtocol);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.txtsystemProxyExceptions);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // cmbSystemProxyAdvancedProtocol
+            // 
+            this.cmbSystemProxyAdvancedProtocol.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSystemProxyAdvancedProtocol, "cmbSystemProxyAdvancedProtocol");
+            this.cmbSystemProxyAdvancedProtocol.Name = "cmbSystemProxyAdvancedProtocol";
             // 
             // label13
             // 
@@ -526,6 +657,8 @@
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.tabPageCoreType.ResumeLayout(false);
+            this.tabPageCoreType.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -551,11 +684,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cmbprotocol;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbprotocol2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtlocalPort2;
-        private System.Windows.Forms.CheckBox chkudpEnabled2;
-        private System.Windows.Forms.CheckBox chkAllowIn2;
         private System.Windows.Forms.CheckBox chkmuxEnabled;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TextBox txtKcpmtu;
@@ -575,7 +703,6 @@
         private System.Windows.Forms.CheckBox chkAutoRun;
         private System.Windows.Forms.CheckBox chkAllowLANConn;
         private System.Windows.Forms.CheckBox chksniffingEnabled;
-        private System.Windows.Forms.CheckBox chksniffingEnabled2;
         private System.Windows.Forms.CheckBox chkEnableStatistics;
         private System.Windows.Forms.ComboBox cbFreshrate;
         private System.Windows.Forms.Label lbFreshrate;
@@ -585,8 +712,6 @@
         private System.Windows.Forms.LinkLabel linkDnsObjectDoc;
         private System.Windows.Forms.TextBox txtremoteDNS;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cmbCoreType;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox chkIgnoreGeoUpdateCore;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TextBox txtsystemProxyExceptions;
@@ -595,5 +720,31 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtautoUpdateInterval;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnSetLoopback;
+        private System.Windows.Forms.CheckBox chkEnableAutoAdjustMainLvColWidth;
+        private System.Windows.Forms.CheckBox chkEnableSecurityProtocolTls13;
+        private System.Windows.Forms.TabPage tabPageCoreType;
+        private System.Windows.Forms.ComboBox cmbCoreType1;
+        private System.Windows.Forms.Label labCoreType1;
+        private System.Windows.Forms.ComboBox cmbCoreType6;
+        private System.Windows.Forms.Label labCoreType6;
+        private System.Windows.Forms.ComboBox cmbCoreType5;
+        private System.Windows.Forms.Label labCoreType5;
+        private System.Windows.Forms.ComboBox cmbCoreType4;
+        private System.Windows.Forms.Label labCoreType4;
+        private System.Windows.Forms.ComboBox cmbCoreType3;
+        private System.Windows.Forms.Label labCoreType3;
+        private System.Windows.Forms.ComboBox cmbCoreType2;
+        private System.Windows.Forms.Label labCoreType2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.TextBox txtuser;
+        private System.Windows.Forms.TextBox txtautoUpdateSubInterval;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txttrayMenuServersLimit;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox cmbSystemProxyAdvancedProtocol;
+        private System.Windows.Forms.Label label18;
     }
 }
